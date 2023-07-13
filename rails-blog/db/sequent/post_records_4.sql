@@ -1,0 +1,1 @@
+ALTER TABLE post_records ADD COLUMN if not exists co_author character varying;

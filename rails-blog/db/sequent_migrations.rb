@@ -1,4 +1,4 @@
-VIEW_SCHEMA_VERSION = 3
+VIEW_SCHEMA_VERSION = 4
 
 class SequentMigrations < Sequent::Migrations::Projectors
   def self.version
@@ -15,6 +15,9 @@ class SequentMigrations < Sequent::Migrations::Projectors
       ],
       '3' => [
         Projectors::PostProjector,
+      ],
+      '4' => [
+        Sequent::Migrations.alter_table(Projections::PostRecord),
       ],
     }
   end

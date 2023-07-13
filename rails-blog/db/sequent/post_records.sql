@@ -2,6 +2,7 @@ CREATE TABLE post_records%SUFFIX% (
     id serial NOT NULL,
     aggregate_id uuid NOT NULL,
     author character varying,
+    co_author character varying,
     title character varying,
     content character varying,
     CONSTRAINT post_records_pkey%SUFFIX% PRIMARY KEY (id)
